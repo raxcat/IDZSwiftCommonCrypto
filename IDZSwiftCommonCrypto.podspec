@@ -1,20 +1,20 @@
 Pod::Spec.new do |s|
 
-  s.name         = "IDZSwiftCommonCrypto"
-  s.version      = "0.8.3"
+  s.name         = "WinnerWave-IDZSwiftCommonCrypto"
+  s.version      = "0.8.4"
   s.summary      = "A wrapper for Apple's Common Crypto library written in Swift."
 
-  s.homepage     = "https://github.com/iosdevzone/IDZSwiftCommonCrypto"
+  s.homepage     = "https://github.com/raxcat/IDZSwiftCommonCrypto"
   s.license      = "MIT"
   s.author             = { "iOSDevZone" => "idz@iosdeveloperzone.com" }
   s.social_media_url   = "http://twitter.com/iOSDevZone"
  
-  s.osx.deployment_target = '10.11'
+  s.osx.deployment_target = '10.9'
   s.ios.deployment_target = '9.3'
-  s.tvos.deployment_target = '9.0'
-  s.watchos.deployment_target = '2.0'
+  # s.tvos.deployment_target = '9.0'
+  # s.watchos.deployment_target = '2.0'
 
-  s.source       = { :git => "https://github.com/iosdevzone/IDZSwiftCommonCrypto.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/raxcat/IDZSwiftCommonCrypto.git", :tag => s.version.to_s }
 
   #
   # Create the dummy CommonCrypto.framework structures

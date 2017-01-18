@@ -19,11 +19,11 @@ $(PG): README.md
 all: 
 	$(XC) build -target "IDZSwiftCommonCrypto (iOS)" $(CS_FLAGS) | xcpretty
 	$(XC) build -target "IDZSwiftCommonCrypto (OSX)" $(CS_FLAGS) | xcpretty
-	$(XC) build -target "IDZSwiftCommonCrypto (tvOS)" $(CS_FLAGS) | xcpretty
-	$(XC) build -target "IDZSwiftCommonCrypto (watchOS)" $(CS_FLAGS) | xcpretty
+	# $(XC) build -target "IDZSwiftCommonCrypto (tvOS)" $(CS_FLAGS) | xcpretty
+	# $(XC) build -target "IDZSwiftCommonCrypto (watchOS)" $(CS_FLAGS) | xcpretty
 	$(XC) test -scheme "IDZSwiftCommonCrypto (iOS)" -destination 'platform=iOS Simulator,name=iPhone 6' | xcpretty
 	$(XC) test -scheme "IDZSwiftCommonCrypto (OSX)" | xcpretty
-	$(XC) test -scheme "IDZSwiftCommonCrypto (tvOS)" -destination 'platform=tvOS Simulator,name=Apple TV 1080p'| xcpretty
+	# $(XC) test -scheme "IDZSwiftCommonCrypto (tvOS)" -destination 'platform=tvOS Simulator,name=Apple TV 1080p'| xcpretty
 
 #
 # Build
@@ -45,4 +45,4 @@ lint_pod:
 
 # Push pod to private spec repository
 push_pod:
-	pod trunk push ${NAME}.podspec
+	pod repo push --allow-warnings bitbucket-winnerwavepodspecs --allow-warnings
