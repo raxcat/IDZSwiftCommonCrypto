@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   echo 'Running prepare_command'
   pwd
   echo Running GenerateCommonCryptoModule
-  TC="--toolchain com.apple.dt.toolchain.Swift_2_3"
+  #TC="--toolchain com.apple.dt.toolchain.Swift_2_3"
   SWIFT="xcrun $TC swift"
   $SWIFT ./GenerateCommonCryptoModule.swift macosx .
   $SWIFT ./GenerateCommonCryptoModule.swift iphonesimulator .
